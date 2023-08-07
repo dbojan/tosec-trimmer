@@ -15,8 +15,8 @@ python tt.py "folder with games"
 
 or drag and drop folder to tt.bat.
 
-Sorted,cleared set will be created in 'folder name-srt' on the same partiton, or disk.
-It will be created using hardlinks, so it won't use any disk space.
+Sorted, cleared set will be created in 'folder name-srt' on the same partiton, or disk.
+It will be created using HARDLINKS, so it won't use any disk space.
 Disk numbers will be changed to disk_a, disk_b, from disk 1 of 2, disk 2 of 2, so hatari can autoload disk 2.
 (Unless there is more than 26 disks)
 Too bad retroarch cannot auto mount all files in zip if with usable extension. (without playlist)
@@ -57,7 +57,7 @@ Tested with TOSEC_V2017-04-23
 
 Not related to Tosec group in any way.
 
-
+For multidisk games, program will try to find other disks, if they exist in folder.
 
 
 if you get error like this on windows 10:
@@ -96,3 +96,13 @@ or try updating your windows 10
 error is because max length of file name path in windows 10.
 
 or it could be a bug in the programme ... 
+
+
+
+Also I suggest using Link Shell Extension: https://schinagl.priv.at/nt/hardlinkshellext/hardlinkshellext.html to create
+'hardlinks' (for files) and 'hardlink clones' which are folders+hardlinks inside for folders.
+Use pick link source, drop hardlink or 'hardlink clones' for folders.
+You can delete clones, another instance will exist. Do not edit their content, cause the original file's content
+will also change!
+Don't use symlink, cause if you delete original, symlink wont work.
+If you use hardlink/hardlink clones, and delete original, copy will still work.

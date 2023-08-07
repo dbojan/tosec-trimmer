@@ -108,3 +108,10 @@ You can delete clones, another instance will exist. Do not edit their content, c
 will also change!
 Don't use symlink, cause if you delete original, symlink wont work.
 If you use hardlink/hardlink clones, and delete original, copy will still work.
+
+
+note:
+hearto uses no-intro dats for atari st, meaning there are only handfull of games.
+amiga ipf files are not patched, meaning some games still have game protection.
+for amiga, I suggest using lha or whd games with retroarch or some other emulator that supports them
+lha and whd are games installed to amiga virtual hdd.

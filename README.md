@@ -17,7 +17,8 @@ or drag and drop folder to tt.bat.
 
 Sorted, cleared set will be created in 'folder name-srt' on the same partiton, or disk.
 It will be created using HARDLINKS, so it won't use any disk space.
-Disk numbers will be changed to disk_a, disk_b, from disk 1 of 2, disk 2 of 2, so hatari can autoload disk 2.
+Disk numbers will be changed to disk_a, disk_b, from disk 1 of 2, disk 2 of 2, so hatari can autoload
+disk 2.
 (Unless there is more than 26 disks)
 Too bad retroarch cannot auto mount all files in zip if with usable extension. (without playlist)
 
@@ -41,7 +42,8 @@ In retroarch, choose to scan only m3u extension.
 You can delete m3u playlist in windows explorer if you do not need it.
 
 
-if you do not want to have disk_a, b for multi disks, edit tt.py and change 'use_numbers_for_disks' to some value:
+if you do not want to have disk_a, b for multi disks, edit tt.py and change 'use_numbers_for_disks'
+to some value:
 
 #use_numbers_for_disks=0# use game name disk_a, disk_b, (hatari emulator auto inserts disk_b), default
 #use_numbers_for_disks=1# use game name disk_1,game name_disk 2

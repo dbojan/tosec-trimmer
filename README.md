@@ -115,3 +115,5 @@ hearto uses no-intro dats for atari st, meaning there are only handfull of games
 amiga ipf files are not patched, meaning some games still have game protection.
 for amiga, I suggest using lha or whd games with retroarch or some other emulator that supports them
 lha and whd are games installed to amiga virtual hdd.
+
+no warranty of any kind given.

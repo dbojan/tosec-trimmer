@@ -7,7 +7,7 @@ Trimmer for Tosec Amiga and Atari ST floppy images of releases (games) to make 1
 
 Installing:
 click on tosec_trimmer.zip
-click on download on the right.
+click on download on the right. (click on the arrow pointing down)
 unzip somewhere on disk drive.
 
 Using:

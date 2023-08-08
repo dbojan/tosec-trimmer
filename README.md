@@ -12,8 +12,14 @@ unzip somewhere on disk drive.
 
 Using:
 python tt.py "folder with games"
+example:
+python tt.py "d:\roms\folder with games"
+or 
+python tt.py "d:/roms/folder with games"
 
 or drag and drop folder to tt.bat.
+
+Note: This program expects your zip files to be in "folder with games", not in subfolders of "folder with games".
 
 Sorted, cleared set will be created in 'folder name-srt' on the same partiton, or disk.
 It will be created using HARDLINKS, so it won't use any disk space.

@@ -1,8 +1,8 @@
 # tosec-trimmer
-Trimmer for Tosec Amiga and Atari ST floppy images of releases (games) to make 1g1r
+Trimmer for Tosec Amiga and Atari ST floppy images of releases (games) to make 1g1r one game one rom
 
 ```
-#2023-08-07-2
+#2023-08-08-1
 #beta
 
 Installing:
@@ -48,11 +48,8 @@ to some value:
 #use_numbers_for_disks=0# use game name disk_a, disk_b, (hatari emulator auto inserts disk_b), default
 #use_numbers_for_disks=1# use game name disk_1,game name_disk 2
 #use_numbers_for_disks=2# use game name(disk 1 of 2)
-#use_numbers_for_disks=3# use game name(disk 1 of 2)[more tags here]
-#
-#note: use of setting: use_numbers_for_disks=3 is currently discouraged, due to bug which might link more disks than needed, 
-#for example in King's Quest 2 - Romancing The Throne (1985)(Sierra)(Disk 1 of 2), 4 instead of 2 :)
-#note do not use 'use_numbers_for_disks=3' in this version
+#use_numbers_for_disks=3# use game name(disk 1 of 2)[more tags here], sometimes might show error if the file path is longer than 260
+
 
 if output folder exist, program will exit.
 
@@ -125,4 +122,7 @@ no warranty of any kind given.
 changes in 2023-08-07-2
 -bug fixes: check if disk 2 is in the list, when using full name
 -do not use use_numbers_for_disks=3 in this version
+
+changes in 2023-08-08-1
+-fixed bug with 'use_numbers_for_disks=3'.
 

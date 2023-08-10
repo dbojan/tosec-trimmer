@@ -2,7 +2,7 @@
 Trimmer for Tosec Amiga and Atari ST floppy images of releases (games) to make 1g1r one game one rom
 
 ```
-#2023-08-08-1
+#2023-08-10-1
 #beta
 
 Installing:
@@ -132,3 +132,5 @@ changes in 2023-08-07-2
 changes in 2023-08-08-1
 -fixed bug with 'use_numbers_for_disks=3'.
 
+changes in 2023-08-10-1
+-more bug fixes for lower case for latter disks

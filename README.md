@@ -5,6 +5,26 @@ Trimmer for Tosec Amiga and Atari ST floppy images of releases (games) to make 1
 #2023-08-10-1
 #beta
 
+This program will create new folder named 'folder with games-srt',
+in which there will be hardlinks to original 'folder with games'.
+(Hardlinks are like copies of files, but take no space on disk)
+Multiple version of same games will not be hardlinked ('copied') to new folder.
+Versions marked with [b]-bad and [v]-virus will be created to '3_bad' folder
+Versions with fr, de, jp, es, it tags will be created in 2_for(eign) folder.
+Note that in foreign folder there will be no separation between good and bad versions.
+This is because if script encounters foreign tag (de, es...) it replaces category (1ok, 3bad)
+with foreign 2for.
+
+Before sorting within each category, there is an added score. For example no [] tags of any kind 
+has lower score, then [cr]-cracked has higher score, then [a]-alternate.
+[!] verified good dumps can have another tags, like [a]-alternate, so they don't have
+the lowest score. That might change in the future.
+Those with the lowest score will be selected first.
+
+Multi disk games will be created in their own folder with playlist in root folder.
+Playlist (.m3u) is creted in 'folder with games-srt' folder, for retroarch.
+You can edit tt.py in notepad++ to change options.
+
 Installing:
 click on tosec_trimmer.zip
 click on download on the right. (click on the arrow pointing down)
@@ -19,8 +39,9 @@ python tt.py "d:/roms/folder with games"
 
 or drag and drop folder to tt.bat.
 
-Note: This program expects your zip files to be in "folder with games", not in subfolders of "folder with games".
+Note: This program expects your game.zip files to be in "folder with games", not in subfolders of "folder with games".
 
+More info:
 Sorted, cleared set will be created in 'folder name-srt' on the same partiton, or disk.
 It will be created using HARDLINKS, so it won't use any disk space.
 Disk numbers will be changed to disk_a, disk_b, from disk 1 of 2, disk 2 of 2, so hatari can autoload
@@ -125,6 +146,12 @@ lha and whd are games installed to amiga virtual hdd.
 no warranty of any kind given.
 
 
+
+todo:
+add option to move hardlinks to first letter of the name of the file.
+for now drag and drop folder on 'move folders and files to first letter folders.bat'
+
+
 changes in 2023-08-07-2
 -bug fixes: check if disk 2 is in the list, when using full name
 -do not use use_numbers_for_disks=3 in this version
@@ -134,3 +161,7 @@ changes in 2023-08-08-1
 
 changes in 2023-08-10-1
 -more bug fixes for lower case for latter disks
+
+changes in 2023-08-12-1
+-added more info in readme.txt
+-added 'move folders and files to first letter folders.bat'

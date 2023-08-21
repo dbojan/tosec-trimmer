@@ -1,9 +1,9 @@
 # tosec-trimmer
-Trimmer for Tosec Amiga and Atari ST floppy images of releases (games) to make 1g1r one game one rom
+## Trimmer for Tosec Amiga and Atari ST floppy images of releases (games) to make 1g1r one game one rom
 
-```
-#2023-08-10-1
-#beta
+<code> <pre> 
+2023-08-21-1
+beta
 
 This program will create new folder named 'folder with games-srt',
 in which there will be hardlinks to original 'folder with games'.
@@ -25,21 +25,21 @@ Multi disk games will be created in their own folder with playlist in root folde
 Playlist (.m3u) is creted in 'folder with games-srt' folder, for retroarch.
 You can edit tt.py in notepad++ to change options.
 
-Installing:
-click on tosec_trimmer.zip
-click on download on the right. (click on the arrow pointing down)
-unzip somewhere on disk drive.
+## Installing:
+Right click on the link [here](https://github.com/dbojan/tosec-trimmer/raw/main/tosec_trimmer.zip), select "Save Link As"
+Unzip somewhere on disk drive.
 
-Using:
+## Using:
 python tt.py "folder with games"
 example:
 python tt.py "d:\roms\folder with games"
 or 
 python tt.py "d:/roms/folder with games"
 
-or drag and drop folder to tt.bat.
+or drag and drop folder on "tt-drop-folder-here.bat"
 
-Note: This program expects your game.zip files to be in "folder with games", not in subfolders of "folder with games".
+Note: This program expects your nameofgamexx.zip files to be in "folder with games", 
+not in subfolders of "folder with games".
 
 More info:
 Sorted, cleared set will be created in 'folder name-srt' on the same partiton, or disk.
@@ -165,3 +165,7 @@ changes in 2023-08-10-1
 changes in 2023-08-12-1
 -added more info in readme.txt
 -added 'move folders and files to first letter folders.bat'
+
+changes in 2023-08-21-1
+-small changes in readme.txt
+-renamed .bat file to 'tt-drop-folder-here.bat'

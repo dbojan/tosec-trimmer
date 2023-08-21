@@ -28,7 +28,7 @@ You can edit tt.py in notepad++ to change options.
 ## Installing:
 You need to have Python installed
 (If you don't have it installed, go to https://www.python.org/, 
-move mouse over 'Downloads' and click on button under 'Download for windows'
+move mouse over 'Downloads' and click on button under 'Download for Windows'
 Save pythonxx.exe somewhere, and double click it to install it. Restart pc, or windows explorer.)
 
 Installing Tosec Trimme:

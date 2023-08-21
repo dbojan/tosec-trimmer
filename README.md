@@ -26,20 +26,33 @@ Playlist (.m3u) is creted in 'folder with games-srt' folder, for retroarch.
 You can edit tt.py in notepad++ to change options.
 
 ## Installing:
-Right click on the link [here](https://github.com/dbojan/tosec-trimmer/raw/main/tosec_trimmer.zip), select "Save Link As"
+You need to have Python installed
+(If you don't have it installed, go to https://www.python.org/, 
+move mouse over 'Downloads' and click on button under 'Download for windows'
+Save pythonxx.exe somewhere, and double click it to install it. Restart pc, or windows explorer.)
+
+Installing Tosec Trimme:
+Right click on the link [here](https://github.com/dbojan/tosec-trimmer/raw/main/tosec_trimmer.zip), 
+Select "Save Link As".
 Unzip somewhere on disk drive.
 
 ## Using:
+drag and drop folder with amiga or atari st games,  on "tt-drop-folder-here.bat"
+
+or from command line
 python tt.py "folder with games"
 example:
 python tt.py "d:\roms\folder with games"
 or 
 python tt.py "d:/roms/folder with games"
 
-or drag and drop folder on "tt-drop-folder-here.bat"
+Note: This program expects zip files of games to be in dropped folder directly,
+not in subfolders, or subfolders of subfolders:
 
-Note: This program expects your nameofgamexx.zip files to be in "folder with games", 
-not in subfolders of "folder with games".
+for example if you drop folder 'atari-st', games are supposed to be in that folder.
+ok: d:\mygames\atari-st\game1.zip,  d:\mygames\atari-st\game2.zip
+not ok: d:\mygames\atari-st\another-folder\game1.zip
+
 
 More info:
 Sorted, cleared set will be created in 'folder name-srt' on the same partiton, or disk.

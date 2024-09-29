@@ -1,12 +1,21 @@
 
 # tosec-trimmer
+
 ## Trimmer for Tosec Amiga and Atari ST floppy images of releases (games) to make 1g1r one game one rom
 
 <code> <pre> 
-2023-08-21-1
-beta
+v2023-09-29-1
 
-This program will create new folder named 'folder with games-srt',
+Tool to create set of games for gaming system with 1g1r (one game one rom) collection.
+Mostly for Atari ST/Amiga, but can probably be used for other game systems.
+
+To download tosec collection, google tosec on the internet, or tosec atari st.
+They might be several gigabytes big. Using torrent, you can choose which folders to download,
+(if option is available), or click show all on internet archive page and download single files.
+For some systems, there already created 1g1r sets, like Hearto.
+Usually found on the internet archive.
+
+This program will create new folder named 'folder with games-srt', (sorted)
 in which there will be hardlinks to original 'folder with games'.
 (Hardlinks are like copies of files, but take no space on disk)
 Multiple version of same games will not be hardlinked ('copied') to new folder.
@@ -86,10 +95,7 @@ You can delete m3u playlist in windows explorer if you do not need it.
 if you do not want to have disk_a, b for multi disks, edit tt.py and change 'use_numbers_for_disks'
 to some value:
 
-#use_numbers_for_disks=0# use game name disk_a, disk_b, (hatari emulator auto inserts disk_b), default
-#use_numbers_for_disks=1# use game name disk_1,game name_disk 2
-#use_numbers_for_disks=2# use game name(disk 1 of 2)
-#use_numbers_for_disks=3# use game name(disk 1 of 2)[more tags here], sometimes might show error if the file path is longer than 260
+use_numbers_for_disks=2
 
 
 if output folder exist, program will exit.
@@ -165,6 +171,11 @@ todo:
 add option to move hardlinks to first letter of the name of the file.
 for now drag and drop folder on 'move folders and files to first letter folders.bat'
 
+changes in 2023-09-29-1
+-bug fixed that stopped creation of next games in folder, if one game had wrong disk name (thanks /u/rockstarfruitpunch)
+-added r to comment string, so there are no deprecation warnings
+-added option to specify suffix for sorted folder instead of default '-srt'
+-disabled default creation of m3u, to enable set make_m3u_playlist=1 in tt.py, using notepad, or notepad++
 
 changes in 2023-08-07-2
 -bug fixes: check if disk 2 is in the list, when using full name

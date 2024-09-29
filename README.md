@@ -181,7 +181,7 @@ changes in 2023-09-29-1
  thanks /u/rockstarfruitpunch for the bug report
 -added r to comment string, so there are no deprecation warnings
 -added option to specify suffix for sorted folder instead of default '-srt'
--disabled default creation of m3u, to enable, make_m3u_playlist=1 in tt.py, using notepad,
+-disabled default creation of m3u, to enable, set make_m3u_playlist=1 in tt.py, using notepad,
  or notepad++
 
 changes in 2023-08-07-2

@@ -67,10 +67,11 @@ not ok: d:\mygames\atari-st\another-folder\game1.zip
 More info:
 Sorted, cleared set will be created in 'folder name-srt' on the same partiton, or disk.
 It will be created using HARDLINKS, so it won't use any disk space.
-Disk numbers will be changed to disk_a, disk_b, from disk 1 of 2, disk 2 of 2, so hatari can autoload
-disk 2.
+Disk numbers will be changed to disk_a, disk_b, from disk 1 of 2, disk 2 of 2, so hatari can
+autoload disk 2.
 (Unless there is more than 26 disks)
-Too bad retroarch cannot auto mount all files in zip if with usable extension. (without playlist)
+Too bad retroarch cannot auto mount all files in zip if with usable extension. 
+(without playlist)
 
 To disable creation of m3u playlist, edit tt.py in notepad++, and change line
 make_m3u_playlist = 1
@@ -84,16 +85,16 @@ Add:
 files_connect = ''
 which will make variable files_connect = to empty.
 
-You can also set extension of playlist to .htm, so when you copy or move playlist with htm extension,
-it will also move _files folder.
+You can also set extension of playlist to .htm, so when you copy or move playlist with htm 
+extension, it will also move _files folder.
 This htm connection works only on windows.
 
 In retroarch, choose to scan only m3u extension.
 You can delete m3u playlist in windows explorer if you do not need it.
 
 
-if you do not want to have disk_a, b for multi disks, edit tt.py and change 'use_numbers_for_disks'
-to some value:
+if you do not want to have disk_a, b for multi disks, edit tt.py and change 
+'use_numbers_for_disks' to some value:
 
 use_numbers_for_disks=2
 
@@ -113,7 +114,13 @@ if you get error like this on windows 10:
 
   File "C:\Users\bojan\Desktop\TEMP\ttdiskv2h5-new-.py", line 46, in fMakeHardlink
     os.link(source,dest)
-FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\stx/Leisure Suit Larry 2 - Leisure Suit Larry Goes Looking For Love - In Several Wrong Places - (1988)(Sierra)(Disk 1 of 3).zip' -> 'C:\\stx-sortedd  ddddddddddddddddddddd/1ok/Leisure Suit Larry 2 - Leisure Suit Larry Goes Looking For Love - In Several Wrong Places - (1988)(Sierra)(Disks 3)/Leisure Suit Larry 2 - Leisure Suit Larry Goes Looking For Love - In Several Wrong Places - (1988)(Sierra)(Disks 3)_a.zip'
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 
+'C:\\stx/Leisure Suit Larry 2 - Leisure Suit Larry Goes Looking For Love - 
+In Several Wrong Places - (1988)(Sierra)(Disk 1 of 3).zip' -> 
+'C:\\stx-sortedd  ddddddddddddddddddddd/1ok/Leisure Suit Larry 2 
+- Leisure Suit Larry Goes Looking For Love - In Several Wrong Places 
+- (1988)(Sierra)(Disks 3)/Leisure Suit Larry 2 - Leisure Suit Larry Goes Looking For Love 
+- In Several Wrong Places - (1988)(Sierra)(Disks 3)_a.zip'
 
 it could be your path name is too long.
 rename source dir to something like 
@@ -148,11 +155,11 @@ or it could be a bug in the programme ...
 
 
 
-Also I suggest using Link Shell Extension: https://schinagl.priv.at/nt/hardlinkshellext/hardlinkshellext.html to create
-'hardlinks' (for files) and 'hardlink clones' which are folders+hardlinks inside for folders.
+Also I suggest using Link Shell Extension: https://schinagl.priv.at/nt/hardlinkshellext/hardlinkshellext.html 
+to create 'hardlinks' (for files) and 'hardlink clones' which are folders+hardlinks inside for folders.
 Use pick link source, drop hardlink or 'hardlink clones' for folders.
-You can delete clones, another instance will exist. Do not edit their content, cause the original file's content
-will also change!
+You can delete clones, another instance will exist. Do not edit their content, cause the
+original file's content will also change!
 Don't use symlink, cause if you delete original, symlink wont work.
 If you use hardlink/hardlink clones, and delete original, copy will still work.
 
@@ -160,8 +167,8 @@ If you use hardlink/hardlink clones, and delete original, copy will still work.
 note:
 hearto uses no-intro dats for atari st, meaning there are only handfull of games.
 amiga ipf files are not patched, meaning some games still have game protection.
-for amiga, I suggest using lha or whd games with retroarch or some other emulator that supports them
-lha and whd are games installed to amiga virtual hdd.
+for amiga, I suggest using lha or whd games with retroarch or some other emulator that 
+supports them. Lha and whd are games installed to amiga virtual hdd.
 
 no warranty of any kind given.
 
@@ -176,7 +183,8 @@ changes in 2023-09-29-1
  thanks /u/rockstarfruitpunch for the bug report
 -added r to comment string, so there are no deprecation warnings
 -added option to specify suffix for sorted folder instead of default '-srt'
--disabled default creation of m3u, to enable set make_m3u_playlist=1 in tt.py, using notepad, or notepad++
+-disabled default creation of m3u, to enable set make_m3u_playlist=1 in tt.py, using notepad,
+ or notepad++
 
 changes in 2023-08-07-2
 -bug fixes: check if disk 2 is in the list, when using full name

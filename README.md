@@ -151,8 +151,9 @@ or it could be a bug in the programme ...
 
 
 
-Also I suggest using Link Shell Extension: https://schinagl.priv.at/nt/hardlinkshellext/hardlinkshellext.html 
-to create 'hardlinks' (for files) and 'hardlink clones' which are folders+hardlinks inside for folders.
+Also I suggest using Link Shell Extension: 
+https://schinagl.priv.at/nt/hardlinkshellext/hardlinkshellext.html 
+to create 'hardlinks' (for files) and 'hardlink clones' which are folders+hardlinks inside the folders.
 Use pick link source, drop hardlink or 'hardlink clones' for folders.
 You can delete clones, another instance will exist. Do not edit their content, cause the
 original file's content will also change!

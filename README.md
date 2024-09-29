@@ -117,10 +117,10 @@ if you get error like this on windows 10:
 FileNotFoundError: [WinError 3] The system cannot find the path specified: 
 'C:\\stx/Leisure Suit Larry 2 - Leisure Suit Larry Goes Looking For Love - 
 In Several Wrong Places - (1988)(Sierra)(Disk 1 of 3).zip' -> 
-'C:\\stx-sortedd  ddddddddddddddddddddd/1ok/Leisure Suit Larry 2 
-- Leisure Suit Larry Goes Looking For Love - In Several Wrong Places 
-- (1988)(Sierra)(Disks 3)/Leisure Suit Larry 2 - Leisure Suit Larry Goes Looking For Love 
-- In Several Wrong Places - (1988)(Sierra)(Disks 3)_a.zip'
+'C:\\stx-sortedd  ddddddddddddddddddddd/1ok/Leisure Suit Larry 2 - 
+Leisure Suit Larry Goes Looking For Love - In Several Wrong Places - (1988)
+(Sierra)(Disks 3)/Leisure Suit Larry 2 - Leisure Suit Larry Goes Looking For Love - 
+In Several Wrong Places - (1988)(Sierra)(Disks 3)_a.zip'
 
 it could be your path name is too long.
 rename source dir to something like 

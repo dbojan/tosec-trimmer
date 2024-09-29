@@ -178,7 +178,7 @@ for now drag and drop folder on 'move folders and files to first letter folders.
 
 changes in 2023-09-29-1
 -bug fixed that stopped creation of next games in folder, if one game had wrong disk name,
- thanks /u/rockstarfruitpunch for the bug report
+ thanks /u/rockstarfruitpunch for the bug report and the fix
 -added r to comment string in python code, so there are no deprecation warnings
 -added option to specify suffix for sorted folder instead of default '-srt'
 -disabled default creation of m3u, to enable, set make_m3u_playlist=1 in tt.py, using notepad,

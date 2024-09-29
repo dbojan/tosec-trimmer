@@ -127,10 +127,6 @@ rename source dir to something like
 c:\stx
 instead of c:\games\emu\tosec ...
 
-#b added priority to notags regex
-#elvira notags is in german language ?
-
-
 
 you could also change suffix of changed folder from -srt to -s in code.
 

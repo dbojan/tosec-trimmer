@@ -41,7 +41,7 @@ You need to have Python installed
 move mouse over 'Downloads' and click on button under 'Download for Windows'
 Save pythonxx.exe somewhere, and double click it to install it. Restart pc, or windows explorer.)
 
-Installing Tosec Trimme:
+Installing Tosec Trimmer:
 Right click on the link [here](https://github.com/dbojan/tosec-trimmer/raw/main/tosec_trimmer.zip), 
 Select "Save Link As".
 Unzip somewhere on disk drive.

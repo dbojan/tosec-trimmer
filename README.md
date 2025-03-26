@@ -184,20 +184,20 @@ changes in 2023-09-29-1
 -disabled default creation of m3u, to enable, set make_m3u_playlist=1 in tt.py, using notepad,
  or notepad++
 
-changes in 2023-08-07-2
--bug fixes: check if disk 2 is in the list, when using full name
--do not use use_numbers_for_disks=3 in this version
-
-changes in 2023-08-08-1
--fixed bug with 'use_numbers_for_disks=3'.
-
-changes in 2023-08-10-1
--more bug fixes for lower case for latter disks
+changes in 2023-08-21-1
+-small changes in readme.txt
+-renamed .bat file to 'tt-drop-folder-here.bat'
 
 changes in 2023-08-12-1
 -added more info in readme.txt
 -added 'move folders and files to first letter folders.bat'
 
-changes in 2023-08-21-1
--small changes in readme.txt
--renamed .bat file to 'tt-drop-folder-here.bat'
+changes in 2023-08-10-1
+-more bug fixes for lower case for latter disks
+
+changes in 2023-08-08-1
+-fixed bug with 'use_numbers_for_disks=3'.
+
+changes in 2023-08-07-2
+-bug fixes: check if disk 2 is in the list, when using full name
+-do not use use_numbers_for_disks=3 in this version
